@@ -3,66 +3,138 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Minha Empresa</title>
+  <title>Sander Zincagem</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
   <style>
-    header { height: 70vh; }
-    .carousel-item img { object-fit: cover; height: 70vh; }
-    .card-icon { font-size: 2.5rem; color: #0d6efd; margin-bottom: 15px; }
-    .w-45 { width: 48%; } /* largura dos botões de contato */
-	
-	 .btn-email, .btn-whats {
-		  display: flex;
-		  align-items: center;
-		  justify-content: center;
-		  font-weight: 500;
-		  border-radius: 50px;
-		  padding: 10px 20px;
-		  transition: all 0.3s ease;
-		}
+	body {
+	  background-color: #121212;
+	  color: #e0e0e0; /* texto principal */
+	}
 
-		/* Email - Azul elegante */
-		.btn-email {
-		  background-color: #007bff;
-		  color: white;
-		  border: none;
-		}
-		.btn-email:hover {
-		  background-color: #0056b3;
-		  transform: scale(1.05);
-		}
+	a {
+	  color: #e0e0e0;
+	  text-decoration: none;
+	}
+	a:hover {
+	  color: #aaaaaa;
+	}
 
-		/* WhatsApp - Verde oficial */
-		.btn-whats {
-		  background-color: #25D366;
-		  color: white;
-		  border: none;
-		}
-		.btn-whats:hover {
-		  background-color: #1ebe5d;
-		  transform: scale(1.05);
-		}
+	/* Navbar escura */
+	.navbar {
+	  background-color: #1f1f1f !important;
+	}
+	.navbar .nav-link {
+	  color: #e0e0e0 !important;
+	}
+	.navbar .nav-link.active {
+	  color: #cccccc !important; /* grafite claro para destaque */
+	}
 
-		/* Ícones */
-		.btn-email i, .btn-whats i {
-		  font-size: 1.2rem;
-		}
+	/* Seções */
+	section {
+	  background-color: #1a1a1a;
+	  color: #e0e0e0;
+	}
 
-		/* Espaçamento entre botões */
-		.btn-group-contact {
-		  display: flex;
-		  justify-content: space-between;
-		  gap: 10px;
-		}	
+	/* Cards */
+	.card {
+	  background-color: #2a2a2a;
+	  color: #e0e0e0;
+	}
+
+	/* Títulos de cards e destaque */
+	.card-title {
+	  color: #cccccc !important; /* grafite claro e legível */
+	  font-weight: 600;
+	}
+
+	/* Carousel caption */
+	.carousel-caption {
+	  background-color: rgba(0, 0, 0, 0.5);
+	  padding: 1rem;
+	  border-radius: 8px;
+	}
+
+	/* Footer */
+	footer {
+	  background-color: #1f1f1f;
+	  color: #e0e0e0;
+	}
+	footer a {
+	  color: #e0e0e0 !important;
+	}
+
+	/* Botões */
+	.btn-email, .btn-whats {
+	  display: flex;
+	  align-items: center;
+	  justify-content: center;
+	  font-weight: 500;
+	  border-radius: 50px;
+	  padding: 10px 20px;
+	  transition: all 0.3s ease;
+	}
+
+	/* Email - Grafite */
+	.btn-email {
+	  background-color: #333333 !important;
+	  color: #e0e0e0;
+	  border: none;
+	}
+	.btn-email:hover {
+	  background-color: #1f1f1f !important;
+	  transform: scale(1.05);
+	}
+
+	/* WhatsApp - Verde oficial */
+	.btn-whats {
+	  background-color: #25D366 !important;
+	  color: white;
+	  border: none;
+	}
+	.btn-whats:hover {
+	  background-color: #1ebe5d !important;
+	  transform: scale(1.05);
+	}
+
+	/* Ícones */
+	.btn-email i, .btn-whats i {
+	  font-size: 1.2rem;
+	}
+
+	/* Inputs e textarea */
+	input, textarea {
+	  background-color: #2a2a2a;
+	  color: #e0e0e0;
+	  border: 1px solid #444;
+	}
+	input::placeholder, textarea::placeholder {
+	  color: #aaa;
+	}
+
+	/* Espaçamento entre botões */
+	.btn-group-contact {
+	  display: flex;
+	  justify-content: space-between;
+	  gap: 10px;
+	}
+
+	/* Header / Carrossel */
+	header { height: 70vh; }
+	.carousel-item img { object-fit: cover; height: 70vh; }
+	/* Sobrescrever text-muted para tema escuro */
+	.text-muted {
+	  color: #cccccc !important; /* cinza claro, legível em fundo escuro */
+	}
   </style>
 </head>
 <body>
 
 <!-- Navbar -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
   <div class="container">
-    <a class="navbar-brand" href="#">Minha Empresa</a>
+    <a class="navbar-brand" href="#">Sander Zincagem</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -117,7 +189,7 @@
 </header>
 
 <!-- Sobre -->
-<section id="sobre" class="py-5 bg-light">
+<section id="sobre" class="py-5">
   <div class="container">
     <h2 class="text-center mb-4">Sobre Nós</h2>
     <p class="text-center">A Sander Zincagens nasceu de um sonho simples, mas cheio de propósito: o sonho de uma família em construir seu próprio caminho.
@@ -128,7 +200,7 @@ Mantemos viva a essência que nos trouxe até aqui: o espírito familiar, o resp
 </section>
 
 <!-- Serviços -->
-<section id="servicos" class="py-5 bg-light">
+<section id="servicos" class="py-5">
   <div class="container">
     <div class="text-center mb-5">
       <h2 class="fw-bold">Nossos Serviços</h2>
@@ -139,7 +211,7 @@ Mantemos viva a essência que nos trouxe até aqui: o espírito familiar, o resp
       <div class="col-md-6">
         <div class="card h-100 shadow-sm border-0">
           <div class="card-body">
-            <h5 class="card-title text-primary"><i class="bi bi-gear-wide-connected me-2"></i>Banho de Zinco em Rotativa</h5>
+            <h5 class="card-title"><i class="bi bi-gear-wide-connected me-2"></i>Banho de Zinco em Rotativa</h5>
             <p class="card-text">
               Processo de galvanização realizado em tambores rotativos, ideal para peças pequenas e de geometria simples. 
               As peças são submetidas à imersão completa em solução eletrolítica de zinco, garantindo proteção contra corrosão com acabamento uniforme.
@@ -156,7 +228,7 @@ Mantemos viva a essência que nos trouxe até aqui: o espírito familiar, o resp
       <div class="col-md-6">
         <div class="card h-100 shadow-sm border-0">
           <div class="card-body">
-            <h5 class="card-title text-primary"><i class="bi bi-building-gear me-2"></i>Banho de Zinco em Tanque (Gancheira)</h5>
+            <h5 class="card-title"><i class="bi bi-building-gear me-2"></i>Banho de Zinco em Tanque (Gancheira)</h5>
             <p class="card-text">
               Processo indicado para peças maiores ou que exigem acabamento visual superior. 
               As peças são fixadas individualmente em gancheiras e mergulhadas nos tanques, evitando atrito e garantindo espessura uniforme do revestimento.
@@ -174,7 +246,7 @@ Mantemos viva a essência que nos trouxe até aqui: o espírito familiar, o resp
 </section>
 
 <!-- Contato -->
-<section id="contato" class="py-5 bg-light">
+<section id="contato" class="py-5">
   <div class="container">
     <h2 class="text-center mb-4">Contato</h2>
     <div class="row justify-content-center">
@@ -193,18 +265,14 @@ Mantemos viva a essência que nos trouxe até aqui: o espírito familiar, o resp
             <textarea class="form-control" id="mensagem" rows="4" placeholder="Sua mensagem"></textarea>
           </div>
 
-		  <!-- Botões para enviar -->
 		  <div class="d-flex justify-content-between gap-3">
-		  <!-- Botão de Email -->
-		  <a id="btnEmail" href="#" class="btn btn-email w-50">
-			<i class="bi bi-envelope-fill me-2"></i> Enviar Email
-		  </a>
-
-		  <!-- Botão de WhatsApp -->
-		  <a id="btnWhats" href="#" class="btn btn-whats w-50">
-			<i class="bi bi-whatsapp me-2"></i> Enviar WhatsApp
-		  </a>
-		</div>
+		    <a id="btnEmail" href="#" class="btn btn-email w-50">
+			  <i class="bi bi-envelope-fill me-2"></i> Enviar Email
+		    </a>
+		    <a id="btnWhats" href="#" class="btn btn-whats w-50">
+			  <i class="bi bi-whatsapp me-2"></i> Enviar WhatsApp
+		    </a>
+		  </div>
         </form>
       </div>
     </div>
@@ -212,13 +280,13 @@ Mantemos viva a essência que nos trouxe até aqui: o espírito familiar, o resp
 </section>
 
 <!-- Footer -->
-<footer class="bg-primary text-white py-4">
+<footer class="py-4">
   <div class="container text-center">
-    <p>&copy; 2025 Minha Empresa | Todos os direitos reservados</p>
+    <p>&copy; 2025 Sander Zincagem | Todos os direitos reservados</p>
     <div>
-      <a href="#" class="text-white me-3"><i class="bi bi-facebook"></i></a>
-      <a href="#" class="text-white me-3"><i class="bi bi-twitter"></i></a>
-      <a href="#" class="text-white"><i class="bi bi-instagram"></i></a>
+      <a href="#"><i class="bi bi-facebook me-3"></i></a>
+      <a href="#"><i class="bi bi-twitter me-3"></i></a>
+      <a href="#"><i class="bi bi-instagram"></i></a>
     </div>
   </div>
 </footer>
@@ -246,10 +314,10 @@ Mantemos viva a essência que nos trouxe até aqui: o espírito familiar, o resp
 
     if (!nome || !mensagem) {
       alert("Por favor, preencha o seu nome e a mensagem antes de enviar pelo WhatsApp!");
-      return; // interrompe a execução se algum campo estiver vazio
+      return;
     }
 
-    const numeroWhats = "5511999999999"; // seu número no formato internacional
+    const numeroWhats = "5519982447908";
     const text = encodeURIComponent(`Olá, meu nome é ${nome}. ${mensagem}`);
 
     btnWhats.href = `https://wa.me/${numeroWhats}?text=${text}`;
