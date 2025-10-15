@@ -8,6 +8,17 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
 
   <style>
+	.carousel-caption h2 {
+	  font-size: 1.5rem;
+	  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+	}
+
+	@media (min-width: 768px) {
+	  .carousel-caption h2 {
+		font-size: 2.5rem;
+	  }
+	}  
+  
     /* ======== Tema escuro (padrão) ======== */
     body {
       background-color: #121212;
@@ -206,6 +217,21 @@
 	body.light-mode .navbar-toggler-icon {
 	  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(33,37,41,1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
 	}
+	
+	.carousel-caption {
+	  bottom: 25%;
+	}
+
+	.carousel-caption h2 {
+	  font-size: 1.5rem;
+	  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+	}
+
+	@media (min-width: 768px) {
+	  .carousel-caption h2 {
+		font-size: 2.5rem;
+	  }
+	}	
 		
   </style>
 </head>
@@ -240,23 +266,23 @@
       <div class="carousel-inner">
         <div class="carousel-item active">
           <img src="https://picsum.photos/1200/700?1" class="d-block w-100" alt="Slide 1">
-          <div class="carousel-caption d-none d-md-block">
-            <h2>Proteção que Gera Confiança</h2>
-            <p>Cada peça recebe o tratamento adequado para resistir ao tempo e às condições mais severas, garantindo segurança e confiabilidade.</p>
+          <div class="carousel-caption">
+            <h2 class="d-block d-md-block">Proteção que Gera Confiança</h2>
+            <p class="d-none d-md-block">Cada peça recebe o tratamento adequado para resistir ao tempo e às condições mais severas, garantindo segurança e confiabilidade.</p>
           </div>
         </div>
         <div class="carousel-item">
           <img src="https://picsum.photos/1200/700?2" class="d-block w-100" alt="Slide 2">
-          <div class="carousel-caption d-none d-md-block">
-            <h2>Experiência e Inovação</h2>
-            <p>São anos de atuação no setor, aprimorando técnicas e incorporando novas tecnologias para oferecer o melhor resultado.</p>
+          <div class="carousel-caption">
+            <h2 class="d-block d-md-block">Experiência e Inovação</h2>
+            <p class="d-none d-md-block">São anos de atuação no setor, aprimorando técnicas e incorporando novas tecnologias para oferecer o melhor resultado.</p>
           </div>
         </div>
         <div class="carousel-item">
           <img src="https://picsum.photos/1200/700?3" class="d-block w-100" alt="Slide 3">
-          <div class="carousel-caption d-none d-md-block">
-            <h2>Parceria e Compromisso</h2>
-            <p>Mais do que prestadores de serviço, somos parceiros de nossos clientes, entregando soluções eficientes, prazos cumpridos e qualidade assegurada.</p>
+          <div class="carousel-caption">
+            <h2 class="d-block d-md-block">Parceria e Compromisso</h2>
+            <p class="d-none d-md-block">Mais do que prestadores de serviço, somos parceiros de nossos clientes, entregando soluções eficientes, prazos cumpridos e qualidade assegurada.</p>
           </div>
         </div>
       </div>
