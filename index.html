@@ -6,323 +6,403 @@
   <title>Sander Zincagem</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+
   <style>
-	body {
-	  background-color: #121212;
-	  color: #e0e0e0; /* texto principal */
-	}
-
-	a {
-	  color: #e0e0e0;
-	  text-decoration: none;
-	}
-	a:hover {
-	  color: #aaaaaa;
-	}
-
-	/* Navbar escura */
-	.navbar {
-	  background-color: #1f1f1f !important;
-	}
-	.navbar .nav-link {
-	  color: #e0e0e0 !important;
-	}
-	.navbar .nav-link.active {
-	  color: #cccccc !important; /* grafite claro para destaque */
-	}
-
-	/* Seções */
-	section {
-	  background-color: #1a1a1a;
-	  color: #e0e0e0;
-	}
-
-	/* Cards */
-	.card {
-	  background-color: #2a2a2a;
-	  color: #e0e0e0;
-	}
-
-	/* Títulos de cards e destaque */
-	.card-title {
-	  color: #cccccc !important; /* grafite claro e legível */
-	  font-weight: 600;
-	}
-
-	/* Carousel caption */
-	.carousel-caption {
-	  background-color: rgba(0, 0, 0, 0.5);
-	  padding: 1rem;
-	  border-radius: 8px;
-	}
-
-	/* Footer */
-	footer {
-	  background-color: #1f1f1f;
-	  color: #e0e0e0;
-	}
-	footer a {
-	  color: #e0e0e0 !important;
-	}
-
-	/* Botões */
-	.btn-email, .btn-whats {
-	  display: flex;
-	  align-items: center;
-	  justify-content: center;
-	  font-weight: 500;
-	  border-radius: 50px;
-	  padding: 10px 20px;
-	  transition: all 0.3s ease;
-	}
-
-	/* Email - Grafite */
-	.btn-email {
-	  background-color: #333333 !important;
-	  color: #e0e0e0;
-	  border: none;
-	}
-	.btn-email:hover {
-	  background-color: #1f1f1f !important;
-	  transform: scale(1.05);
-	}
-
-	/* WhatsApp - Verde oficial */
-	.btn-whats {
-	  background-color: #25D366 !important;
-	  color: white;
-	  border: none;
-	}
-	.btn-whats:hover {
-	  background-color: #1ebe5d !important;
-	  transform: scale(1.05);
-	}
-
-	/* Ícones */
-	.btn-email i, .btn-whats i {
-	  font-size: 1.2rem;
-	}
-
-	/* Inputs e textarea */
-	input, textarea {
-	  background-color: #2a2a2a;
-	  color: #e0e0e0;
-	  border: 1px solid #444;
-	}
-	input::placeholder, textarea::placeholder {
-	  color: #aaa;
-	}
-
-	/* Espaçamento entre botões */
-	.btn-group-contact {
-	  display: flex;
-	  justify-content: space-between;
-	  gap: 10px;
-	}
-
-	/* Header / Carrossel */
-	header { height: 70vh; }
-	.carousel-item img { object-fit: cover; height: 70vh; }
-	/* Sobrescrever text-muted para tema escuro */
-	.text-muted {
-	  color: #cccccc !important; /* cinza claro, legível em fundo escuro */
-	}
-  </style>
-</head>
-<body>
-
-<!-- Navbar -->
-<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
-  <div class="container">
-    <a class="navbar-brand" href="#">Sander Zincagem</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav ms-auto">
-        <li class="nav-item"><a class="nav-link active" href="#sobre">Sobre</a></li>
-        <li class="nav-item"><a class="nav-link" href="#servicos">Serviços</a></li>
-        <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
-      </ul>
-    </div>
-  </div>
-</nav>
-
-<!-- Carrossel -->
-<header>
-  <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-    <div class="carousel-indicators">
-      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"></button>
-      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></button>
-      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"></button>
-    </div>
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img src="https://picsum.photos/1200/700?1" class="d-block w-100" alt="Slide 1">
-        <div class="carousel-caption d-none d-md-block">
-          <h2>Proteção que Gera Confiança</h2>
-          <p>Cada peça recebe o tratamento adequado para resistir ao tempo e às condições mais severas, garantindo segurança e confiabilidade.</p>
-        </div>
-      </div>
-      <div class="carousel-item">
-        <img src="https://picsum.photos/1200/700?2" class="d-block w-100" alt="Slide 2">
-        <div class="carousel-caption d-none d-md-block">
-          <h2>Experiência e Inovação</h2>
-          <p>São anos de atuação no setor, aprimorando técnicas e incorporando novas tecnologias para oferecer o melhor resultado. Alinhando Experiência e Inovação</p>
-        </div>
-      </div>
-      <div class="carousel-item">
-        <img src="https://picsum.photos/1200/700?3" class="d-block w-100" alt="Slide 3">
-        <div class="carousel-caption d-none d-md-block">
-          <h2>Parceria e Compromisso</h2>
-          <p>Mais do que prestadores de serviço, somos parceiros de nossos clientes, entregando soluções eficientes, prazos cumpridos e qualidade assegurada.</p>
-        </div>
-      </div>
-    </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon"></span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-      <span class="carousel-control-next-icon"></span>
-    </button>
-  </div>
-</header>
-
-<!-- Sobre -->
-<section id="sobre" class="py-5">
-  <div class="container">
-    <h2 class="text-center mb-4">Sobre Nós</h2>
-    <p class="text-center">A Sander Zincagens nasceu de um sonho simples, mas cheio de propósito: o sonho de uma família em construir seu próprio caminho.
-Tudo começou com um casal e seus filhos, que uniram coragem, dedicação e amor pelo trabalho para transformar um pequeno espaço em um negócio promissor. No início, éramos uma estrutura modesta, com recursos limitados — mas com uma vontade imensa de fazer dar certo.
-Com o passar dos anos, o esforço, o aprendizado e o compromisso com a qualidade nos fizeram crescer. Hoje, somos uma empresa sólida e segura, especializada em banho de zinco (sincagem), atendendo clientes de diversos setores com seriedade, responsabilidade e excelência.
-Mantemos viva a essência que nos trouxe até aqui: o espírito familiar, o respeito aos clientes e o orgulho de entregar um trabalho bem feito.</p>
-  </div>
-</section>
-
-<!-- Serviços -->
-<section id="servicos" class="py-5">
-  <div class="container">
-    <div class="text-center mb-5">
-      <h2 class="fw-bold">Nossos Serviços</h2>
-      <p class="text-muted">Soluções completas em galvanização e proteção anticorrosiva</p>
-    </div>
-
-    <div class="row g-4">
-      <div class="col-md-6">
-        <div class="card h-100 shadow-sm border-0">
-          <div class="card-body">
-            <h5 class="card-title"><i class="bi bi-gear-wide-connected me-2"></i>Banho de Zinco em Rotativa</h5>
-            <p class="card-text">
-              Processo de galvanização realizado em tambores rotativos, ideal para peças pequenas e de geometria simples. 
-              As peças são submetidas à imersão completa em solução eletrolítica de zinco, garantindo proteção contra corrosão com acabamento uniforme.
-            </p>
-            <ul class="list-unstyled small">
-              <li><strong>Aplicações:</strong> parafusos, porcas, arruelas, pinos e pequenas peças.</li>
-              <li><strong>Acabamentos:</strong> zinco branco, azul, preto, iridescente, amarelo (bicromatizado).</li>
-              <li><strong>Diferenciais:</strong> alta produtividade e ótimo custo-benefício.</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-md-6">
-        <div class="card h-100 shadow-sm border-0">
-          <div class="card-body">
-            <h5 class="card-title"><i class="bi bi-building-gear me-2"></i>Banho de Zinco em Tanque (Gancheira)</h5>
-            <p class="card-text">
-              Processo indicado para peças maiores ou que exigem acabamento visual superior. 
-              As peças são fixadas individualmente em gancheiras e mergulhadas nos tanques, evitando atrito e garantindo espessura uniforme do revestimento.
-            </p>
-            <ul class="list-unstyled small">
-              <li><strong>Aplicações:</strong> peças médias e grandes, componentes estéticos ou sensíveis.</li>
-              <li><strong>Acabamentos:</strong> zinco branco, preto, amarelo, entre outros.</li>
-              <li><strong>Diferenciais:</strong> acabamento impecável e controle preciso da camada.</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- Contato -->
-<section id="contato" class="py-5">
-  <div class="container">
-    <h2 class="text-center mb-4">Contato</h2>
-    <div class="row justify-content-center">
-      <div class="col-md-6">
-        <form onsubmit="return false;">
-          <div class="mb-3">
-            <label for="nome" class="form-label">Nome</label>
-            <input type="text" class="form-control" id="nome" placeholder="Seu nome">
-          </div>
-          <div class="mb-3">
-            <label for="email" class="form-label">Email</label>
-            <input type="email" class="form-control" id="email" placeholder="Seu email">
-          </div>
-          <div class="mb-3">
-            <label for="mensagem" class="form-label">Mensagem</label>
-            <textarea class="form-control" id="mensagem" rows="4" placeholder="Sua mensagem"></textarea>
-          </div>
-
-		  <div class="d-flex justify-content-between gap-3">
-		    <a id="btnEmail" href="#" class="btn btn-email w-50">
-			  <i class="bi bi-envelope-fill me-2"></i> Enviar Email
-		    </a>
-		    <a id="btnWhats" href="#" class="btn btn-whats w-50">
-			  <i class="bi bi-whatsapp me-2"></i> Enviar WhatsApp
-		    </a>
-		  </div>
-        </form>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- Footer -->
-<footer class="py-4">
-  <div class="container text-center">
-    <p>&copy; 2025 Sander Zincagem | Todos os direitos reservados</p>
-    <div>
-      <a href="#"><i class="bi bi-facebook me-3"></i></a>
-      <a href="#"><i class="bi bi-twitter me-3"></i></a>
-      <a href="#"><i class="bi bi-instagram"></i></a>
-    </div>
-  </div>
-</footer>
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-<script>
-  const btnEmail = document.getElementById('btnEmail');
-  const btnWhats = document.getElementById('btnWhats');
-
-  btnEmail.addEventListener('click', () => {
-    const nome = document.getElementById('nome').value;
-    const email = document.getElementById('email').value;
-    const mensagem = document.getElementById('mensagem').value;
-
-    const subject = encodeURIComponent("Contato pelo site");
-    const body = encodeURIComponent(`Nome: ${nome}\nEmail: ${email}\nMensagem: ${mensagem}`);
-
-    btnEmail.href = `mailto:seuemail@empresa.com?subject=${subject}&body=${body}`;
-    window.location.href = btnEmail.href;
-  });
-
-  btnWhats.addEventListener('click', () => {
-    const nome = document.getElementById('nome').value.trim();
-    const mensagem = document.getElementById('mensagem').value.trim();
-
-    if (!nome || !mensagem) {
-      alert("Por favor, preencha o seu nome e a mensagem antes de enviar pelo WhatsApp!");
-      return;
+    /* ======== Tema escuro (padrão) ======== */
+    body {
+      background-color: #121212;
+      color: #e0e0e0;
+      transition: background-color 0.3s, color 0.3s;
     }
 
-    const numeroWhats = "5519982447908";
-    const text = encodeURIComponent(`Olá, meu nome é ${nome}. ${mensagem}`);
+    a {
+      color: #e0e0e0;
+      text-decoration: none;
+    }
+    a:hover {
+      color: #aaaaaa;
+    }
 
-    btnWhats.href = `https://wa.me/${numeroWhats}?text=${text}`;
-    window.open(btnWhats.href, "_blank");
-  });
-</script>
+    .navbar {
+      background-color: #1f1f1f !important;
+    }
+    .navbar .nav-link {
+      color: #e0e0e0 !important;
+    }
+    .navbar .nav-link.active {
+      color: #cccccc !important;
+    }
+
+    section, .card, footer {
+      background-color: #1a1a1a;
+      color: #e0e0e0;
+    }
+
+    .card {
+      background-color: #2a2a2a;
+      border: none;
+    }
+
+    .card-title {
+      color: #cccccc !important;
+      font-weight: 600;
+    }
+
+    .carousel-caption {
+      background-color: rgba(0, 0, 0, 0.5);
+      padding: 1rem;
+      border-radius: 8px;
+    }
+
+    footer {
+      background-color: #1f1f1f;
+      color: #e0e0e0;
+    }
+    footer a {
+      color: #e0e0e0 !important;
+    }
+
+    /* Botões personalizados */
+    .btn-email, .btn-whats {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 500;
+      border-radius: 50px;
+      padding: 10px 20px;
+      transition: all 0.3s ease;
+    }
+
+    .btn-email {
+      background-color: #333333 !important;
+      color: #e0e0e0;
+      border: none;
+    }
+    .btn-email:hover {
+      background-color: #1f1f1f !important;
+      transform: scale(1.05);
+    }
+
+    .btn-whats {
+      background-color: #25D366 !important;
+      color: white;
+      border: none;
+    }
+    .btn-whats:hover {
+      background-color: #1ebe5d !important;
+      transform: scale(1.05);
+    }
+
+    .btn-email i, .btn-whats i {
+      font-size: 1.2rem;
+    }
+
+    input, textarea {
+      background-color: #2a2a2a;
+      color: #e0e0e0;
+      border: 1px solid #444;
+    }
+    input::placeholder, textarea::placeholder {
+      color: #aaa;
+    }
+
+    header {
+      height: 70vh;
+    }
+    .carousel-item img {
+      object-fit: cover;
+      height: 70vh;
+    }
+
+    .text-muted {
+      color: #cccccc !important;
+    }
+
+    /* ======== Tema claro ======== */
+    body.light-mode {
+      background-color: #ffffff;
+      color: #212529;
+    }
+
+    body.light-mode .navbar,
+    body.light-mode footer,
+    body.light-mode .card,
+    body.light-mode section {
+      background-color: #f8f9fa !important;
+      color: #212529 !important;
+    }
+
+    body.light-mode .text-muted {
+      color: #6c757d !important;
+    }
+	
+	/* Ajuste da navbar no tema claro */
+	body.light-mode .navbar {
+	  background-color: #ffffff !important;
+	  border-bottom: 1px solid #ddd;
+	}
+
+	body.light-mode .navbar .nav-link {
+	  color: #212529 !important; /* grafite escuro, legível */
+	}
+
+	body.light-mode .navbar .nav-link.active {
+	  color: #0d6efd !important; /* azul de destaque */
+	}
+
+	body.light-mode .navbar-brand {
+	  color: #212529 !important;
+	}	
+
+    /* ======== Botão de alternância de tema ======== */
+    #toggleTheme {
+      border: none;
+      background: transparent;
+      font-size: 1.3rem;
+      cursor: pointer;
+      transition: color 0.3s ease, transform 0.2s ease;
+    }
+    #toggleTheme i {
+      color: #f8f9fa;
+    }
+    body.light-mode #toggleTheme i {
+      color: #212529;
+    }
+    #toggleTheme:hover {
+      transform: scale(1.1);
+    }
+	
+	/* Navbar links no tema claro */
+	body.light-mode .navbar .nav-link,
+	body.light-mode .navbar .nav-link.active {
+	  color: #212529 !important; /* grafite escuro */
+	}
+
+	body.light-mode .navbar-brand {
+	  color: #212529 !important;
+	}	
+  </style>
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">Sander Zincagem</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link active" href="#sobre">Sobre</a></li>
+          <li class="nav-item"><a class="nav-link" href="#servicos">Serviços</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+        </ul>
+        <button id="toggleTheme" class="btn ms-3"><i class="bi bi-moon-fill"></i></button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Carrossel -->
+  <header>
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="https://picsum.photos/1200/700?1" class="d-block w-100" alt="Slide 1">
+          <div class="carousel-caption d-none d-md-block">
+            <h2>Proteção que Gera Confiança</h2>
+            <p>Cada peça recebe o tratamento adequado para resistir ao tempo e às condições mais severas, garantindo segurança e confiabilidade.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="https://picsum.photos/1200/700?2" class="d-block w-100" alt="Slide 2">
+          <div class="carousel-caption d-none d-md-block">
+            <h2>Experiência e Inovação</h2>
+            <p>São anos de atuação no setor, aprimorando técnicas e incorporando novas tecnologias para oferecer o melhor resultado.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="https://picsum.photos/1200/700?3" class="d-block w-100" alt="Slide 3">
+          <div class="carousel-caption d-none d-md-block">
+            <h2>Parceria e Compromisso</h2>
+            <p>Mais do que prestadores de serviço, somos parceiros de nossos clientes, entregando soluções eficientes, prazos cumpridos e qualidade assegurada.</p>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Sobre -->
+  <section id="sobre" class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-4">Sobre Nós</h2>
+      <p class="text-center">
+        A Sander Zincagens nasceu de um sonho simples, mas cheio de propósito: o sonho de uma família em construir seu próprio caminho.
+        Tudo começou com um casal e seus filhos, que uniram coragem, dedicação e amor pelo trabalho para transformar um pequeno espaço em um negócio promissor.
+        Com o passar dos anos, o esforço, o aprendizado e o compromisso com a qualidade nos fizeram crescer. Hoje, somos uma empresa sólida e segura, especializada em banho de zinco (sincagem), atendendo clientes de diversos setores com seriedade, responsabilidade e excelência.
+        Mantemos viva a essência que nos trouxe até aqui: o espírito familiar, o respeito aos clientes e o orgulho de entregar um trabalho bem feito.
+      </p>
+    </div>
+  </section>
+
+  <!-- Serviços -->
+  <section id="servicos" class="py-5">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2 class="fw-bold">Nossos Serviços</h2>
+        <p class="text-muted">Soluções completas em galvanização e proteção anticorrosiva</p>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-md-6">
+          <div class="card h-100 shadow-sm border-0">
+            <div class="card-body">
+              <h5 class="card-title"><i class="bi bi-gear-wide-connected me-2"></i>Banho de Zinco em Rotativa</h5>
+              <p class="card-text">
+                Processo de galvanização realizado em tambores rotativos, ideal para peças pequenas e de geometria simples.
+                As peças são submetidas à imersão completa em solução eletrolítica de zinco, garantindo proteção contra corrosão com acabamento uniforme.
+              </p>
+              <ul class="list-unstyled small">
+                <li><strong>Aplicações:</strong> parafusos, porcas, arruelas, pinos e pequenas peças.</li>
+                <li><strong>Acabamentos:</strong> zinco branco, azul, preto, iridescente, amarelo (bicromatizado).</li>
+                <li><strong>Diferenciais:</strong> alta produtividade e ótimo custo-benefício.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="card h-100 shadow-sm border-0">
+            <div class="card-body">
+              <h5 class="card-title"><i class="bi bi-building-gear me-2"></i>Banho de Zinco em Tanque (Gancheira)</h5>
+              <p class="card-text">
+                Processo indicado para peças maiores ou que exigem acabamento visual superior.
+                As peças são fixadas individualmente em gancheiras e mergulhadas nos tanques, evitando atrito e garantindo espessura uniforme do revestimento.
+              </p>
+              <ul class="list-unstyled small">
+                <li><strong>Aplicações:</strong> peças médias e grandes, componentes estéticos ou sensíveis.</li>
+                <li><strong>Acabamentos:</strong> zinco branco, preto, amarelo, entre outros.</li>
+                <li><strong>Diferenciais:</strong> acabamento impecável e controle preciso da camada.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contato -->
+  <section id="contato" class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-4">Contato</h2>
+      <div class="row justify-content-center">
+        <div class="col-md-6">
+          <form onsubmit="return false;">
+            <div class="mb-3">
+              <label for="nome" class="form-label">Nome</label>
+              <input type="text" class="form-control" id="nome" placeholder="Seu nome">
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Email</label>
+              <input type="email" class="form-control" id="email" placeholder="Seu email">
+            </div>
+            <div class="mb-3">
+              <label for="mensagem" class="form-label">Mensagem</label>
+              <textarea class="form-control" id="mensagem" rows="4" placeholder="Sua mensagem"></textarea>
+            </div>
+
+            <div class="d-flex justify-content-between gap-3">
+              <a id="btnEmail" href="#" class="btn btn-email w-50">
+                <i class="bi bi-envelope-fill me-2"></i> Enviar Email
+              </a>
+              <a id="btnWhats" href="#" class="btn btn-whats w-50">
+                <i class="bi bi-whatsapp me-2"></i> Enviar WhatsApp
+              </a>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-4">
+    <div class="container text-center">
+      <p>&copy; 2025 Sander Zincagem | Todos os direitos reservados</p>
+      <div>
+        <a href="#"><i class="bi bi-facebook me-3"></i></a>
+        <a href="#"><i class="bi bi-twitter me-3"></i></a>
+        <a href="#"><i class="bi bi-instagram"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    const btnEmail = document.getElementById('btnEmail');
+    const btnWhats = document.getElementById('btnWhats');
+
+    btnEmail.addEventListener('click', () => {
+      const nome = document.getElementById('nome').value;
+      const email = document.getElementById('email').value;
+      const mensagem = document.getElementById('mensagem').value;
+	  
+      if (!nome || !mensagem || !email) {
+        alert("Por favor, preencha o seu nome, email e a mensagem antes de enviar o E-Mail!");
+        return;
+      }	  
+
+      const subject = encodeURIComponent("Contato pelo site");
+      const body = encodeURIComponent(`Nome: ${nome}\nEmail: ${email}\nMensagem: ${mensagem}`);
+
+      btnEmail.href = `mailto:sander_zimcagem@hotmail.com?subject=${subject}&body=${body}`;
+      window.location.href = btnEmail.href;
+    });
+
+    btnWhats.addEventListener('click', () => {
+      const nome = document.getElementById('nome').value.trim();
+      const mensagem = document.getElementById('mensagem').value.trim();
+
+      if (!nome || !mensagem) {
+        alert("Por favor, preencha o seu nome e a mensagem antes de enviar pelo WhatsApp!");
+        return;
+      }
+
+      const numeroWhats = "5519982447908";
+      const text = encodeURIComponent(`Olá, meu nome é ${nome}. ${mensagem}`);
+
+      btnWhats.href = `https://wa.me/${numeroWhats}?text=${text}`;
+      window.open(btnWhats.href, "_blank");
+    });
+
+    // Alternância de tema
+    const toggleTheme = document.getElementById('toggleTheme');
+    const body = document.body;
+
+    if (localStorage.getItem('theme') === 'light') {
+      body.classList.add('light-mode');
+      toggleTheme.innerHTML = '<i class="bi bi-sun-fill"></i>';
+    }
+
+    toggleTheme.addEventListener('click', () => {
+      body.classList.toggle('light-mode');
+      const isLight = body.classList.contains('light-mode');
+      toggleTheme.innerHTML = isLight
+        ? '<i class="bi bi-sun-fill"></i>'
+        : '<i class="bi bi-moon-fill"></i>';
+      localStorage.setItem('theme', isLight ? 'light' : 'dark');
+    });
+  </script>
 </body>
 </html>
